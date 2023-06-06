@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        button {
+            margin-top: 15px;
+        }
+
+        .form-check {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+            <h2>Seus dados</h2>
+            <form>
+                <label for="nome" class="form-label">Seu nome:</label>
+                <input type="text" id="nome" class="form-control">
+                <label for="email" class="form-label">Seu e-mail:</label>
+                <input type="email" id="email" class="form-control">
+                <label for="mensagem" class="form-label">Sua mensagem:</label>
+                <textarea id="mensagem"class="form-control"></textarea>
+                <div class="form-check form-switch">
+                    <label class="form-check-label" for="aceito" >Li e aceito os termos e condições</label>
+                    <input class="form-check-input" type="checkbox" id="aceito">
+                </div>
+                <button class="btn btn-success">
+                    Enviar
+                </button>
+            </form>
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
